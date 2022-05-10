@@ -9,7 +9,6 @@
             padding: 0;
             margin: 0;
             background: #191919;
-            height: 100%;
             overflow-x: hidden;
         }
 

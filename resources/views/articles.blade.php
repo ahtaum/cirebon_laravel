@@ -1,5 +1,9 @@
 @extends('layouts.app')
-@section('title', 'Home')
+@section('title', 'Artikel')
+
+@section('title-banner', 'Artikel')
+@section('content-banner', 'Beberapa artikel yang dapat Anda baca.')
+@section('image-banner', asset('images/img1.jpg'))
 
 @section('content')
 <section id="row-1" class="my-5">

@@ -1,7 +1,7 @@
-<div class="jumbotron p-5 text-light">
+<div class="jumbotron p-5 text-light" style="background-image: url(@yield('image-banner'))">
     <div class="content-banner text-center">
-        <h1 class="display-4 shadow-lg">Cirebon Cuy</h1>
-        <p class="lead shadow-lg">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 class="display-3 shadow-lg fw-bolder">@yield("title-banner")</h1>
+        <p class="lead shadow-lg">@yield('content-banner')</p>
     </div>
 </div>
 
@@ -9,10 +9,10 @@
 
     .jumbotron {
         width: 100%;
-        background: url({{ asset('images/img1.jpg') }});
+        /* background: url({{ asset('images/img1.jpg') }}); */
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 50% 70%;
+        background-position: center;
         height: 70vh;
     }
     .jumbotron .content-banner {
