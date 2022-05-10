@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::controller(PageController::class)->group(function () {
+    Route::get('/', 'home');
 
-Route::get('/articles', function () {
-    return view('articles');
-});
-Route::get('/articles/content-article', function () {
-    return view('contentArticles');
+    Route::get('/articles', 'articles');
+    Route::get('/articles/content-articles', 'contentArticles');
 });
